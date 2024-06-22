@@ -1,8 +1,11 @@
-import time
-import random
-from colored import fg, attr
-import pyfiglet
-import keyboard
+try:
+    import time
+    import random
+    from colored import fg, attr
+    import pyfiglet
+    import keyboard
+except ModuleNotFoundError as err:
+    print(f'ModuleNotFoundError {err}')
 
 num: int = 0
 limit: int = 999999999
